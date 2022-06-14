@@ -73,7 +73,7 @@ services:
   proxy-service:
     restart: unless-stopped
     ports:
-      - "${MAIN_PORT}:10000"
+      - "10000:10000"
     container_name: bbproxy
     image: budibase/proxy
     depends_on:
