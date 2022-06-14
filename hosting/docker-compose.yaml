@@ -8,6 +8,8 @@ services:
     image: budibase.docker.scarf.sh/budibase/apps
     labels:
       shipyard.route: '/'
+    ports:
+    - 4002
     container_name: bbapps
     environment:
       SELF_HOSTED: 1
