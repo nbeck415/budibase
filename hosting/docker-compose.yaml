@@ -6,6 +6,8 @@ services:
   app-service:
     restart: unless-stopped
     image: budibase.docker.scarf.sh/budibase/apps
+    labels:
+      shipyard.route: '/'
     container_name: bbapps
     environment:
       SELF_HOSTED: 1
